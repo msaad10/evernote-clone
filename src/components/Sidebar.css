@@ -1,0 +1,173 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: var(--sidebar-bg);
+  padding: 20px;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+.new-notebook-btn {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.new-notebook-btn:hover {
+  background-color: #0b5ed7;
+  transform: translateY(-1px);
+}
+
+.new-notebook-btn:active {
+  transform: translateY(0);
+}
+
+.new-notebook-btn span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tags-section {
+  margin-bottom: 20px;
+}
+
+.tags-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tags-header h3 {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.clear-filter-btn {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 18px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  opacity: 0.7;
+}
+
+.clear-filter-btn:hover {
+  opacity: 1;
+  background-color: var(--hover-bg);
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
+  padding: 4px 8px;
+  border-radius: 16px;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.tag.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.notebook-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.notebook-item {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: all 0.2s ease;
+  color: var(--text-color);
+}
+
+.notebook-item:hover {
+  background-color: var(--hover-bg);
+}
+
+.notebook-item.active {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+}
+
+.notebook-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.notebook-name {
+  font-weight: 500;
+  flex: 1;
+}
+
+.lock-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  opacity: 0.7;
+}
+
+.lock-button:hover {
+  opacity: 1;
+  background-color: var(--hover-bg);
+}
+
+.notebook-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.notebook-tags .tag {
+  font-size: 10px;
+  padding: 2px 6px;
+  cursor: default;
+} 

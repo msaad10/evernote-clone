@@ -1,0 +1,62 @@
+.rich-text-editor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  background-color: var(--editor-bg);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.editor-toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background-color: var(--editor-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.format-button {
+  background: none;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: var(--text-color);
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.format-button:hover {
+  background-color: var(--hover-bg);
+}
+
+.format-button:active {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+}
+
+.editor-content {
+  flex: 1;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--editor-bg);
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.6;
+  overflow-y: auto;
+  min-height: 200px;
+  outline: none;
+}
+
+.editor-content:empty:before {
+  content: attr(placeholder);
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+.editor-content:focus {
+  border-color: var(--primary-color);
+} 
